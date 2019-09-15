@@ -1,0 +1,8 @@
+.card {
+    height: 250px;
+}
+
+.card-img-top {
+    min-height: 125px;
+    max-height: 125px;
+}

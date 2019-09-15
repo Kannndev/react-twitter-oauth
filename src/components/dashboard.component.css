@@ -1,0 +1,13 @@
+.followerslist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-group {
+    padding: 10px;
+}
