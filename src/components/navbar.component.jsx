@@ -14,7 +14,7 @@ class NavBar extends Component {
         return (
             <div>
                 <nav className="header-page navbar navbar-light bg-light shadow-sm">
-                    <Link className="navbar-brand">Welcome {name}</Link>
+                    <span className="navbar-brand">Welcome {name}</span>
                     <div className="nav-item dropdown header-link show">
                         <Link to="/" className="dropdown-toggle text-capitalize p-0"
                             style={{ textDecoration: "none" }}
