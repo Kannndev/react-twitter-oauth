@@ -4,6 +4,7 @@ import { css } from '@emotion/core';
 import BeatLoader from 'react-spinners/BeatLoader';
 
 import NavBar from './navbar.component';
+import Dashboard from './dashboard.component';
 import * as actionCreators from '../store/actions/actions';
 
 class Home extends Component {
@@ -19,10 +20,11 @@ class Home extends Component {
             left: 50%;
             margin-left: -15px;
         `;
-        const { name, profile_image_url } = this.props.userDetails
+        const { name, profile_image_url } = this.props.userDetails;
+        const { onLogout, followerslist } = this.props;
         return (
             <React.Fragment>
-                <NavBar name={name} profileImageUrl={profile_image_url} logout={this.props.onLogout} />
+                <NavBar name={name} profileImageUrl={profile_image_url} logout={onLogout} />
                 <BeatLoader
                     css={override}
                     sizeUnit={"px"}
@@ -30,6 +32,7 @@ class Home extends Component {
                     color={'#36D7B7'}
                     loading={this.props.loading}
                 />
+                <Dashboard followersList={followerslist} />
             </React.Fragment>
         );
     }
