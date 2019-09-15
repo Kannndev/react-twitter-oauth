@@ -29,6 +29,7 @@ class AppRouter extends Component {
                                 <Redirect to="/" />
                             );
                     }} />
+                    <Route render={() => <Redirect to="/" />} />
                 </Switch>
             </BrowserRouter>
         );
